@@ -18,7 +18,7 @@ class Command
   end
 
   def to_s
-    "#{format_env} #{@args.join(' ')}"
+    @args.join(' ')
   end
 
   def interpolate_environment_variables(argument)
